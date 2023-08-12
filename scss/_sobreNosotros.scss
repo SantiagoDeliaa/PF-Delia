@@ -1,57 +1,50 @@
 
-.sobre-nosotros {
+
+.sobre-nostros{
     display: flex;
     flex-direction: column;
+}
 
-    .texto {
-        h2 {
-            border: solid 2px black;
-            border-radius: 0px;
-            margin-top: 45px;
-            font-size: 40px;
-            text-align: center;
-            font-family: $font-principal;
-        }
+.texto h2{
+    border: solid 2px black;
+    border-radius: 0px;
+    margin-top: 45px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
-        p {
-            margin-right: 170px;
-            margin-left: 170px;
-            margin-top: 90px;
-            margin-bottom: 50px;
-            text-align: center;
-            font-style: italic;
-            font-size: 20px;
-            font-family: $font-principal;
-        }
+.texto p{
+    margin-right: 170px;
+    margin-left: 170px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
-        img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100vw;
-            margin-bottom: 60px;
-        }
-    }
+.texto img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100vw;
+    margin-bottom: 60px;
+}
 
-    .imagen-marca {
-        img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100vw;
-            margin-bottom: 120px;
-        }
-    }
+.imagen-marca img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100vw;
+    margin-bottom: 120px;
 }
 
 @media (max-width: 576px) {
-    .sobre-nosotros {
-        .texto {
-            p {
-                margin-right: 10px;
-                margin-left: 10px;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                font-size: 16px;
-            }
-        }
+    .texto p {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
     }
 }
