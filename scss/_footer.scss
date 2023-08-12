@@ -1,0 +1,130 @@
+
+
+.footer {
+    background-image: url(../Multimedia/img/footer.png);
+    background-size: cover;
+    height: 390px;
+
+    .contenido {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h4 {
+                color: white;
+                font-weight: bold;
+                margin: 0;
+                font-size: 16px;
+                font-family: $font-principal;
+                margin-right: 10px;
+                padding-bottom: 10px;
+            }
+
+            img {
+                width: 32px;
+                height: auto;
+                margin-bottom: 10px;
+            }
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+
+            a {
+                color: white;
+                font-size: 14px;
+                font-family: $font-principal;
+                margin-bottom: 10px;
+                text-decoration: none;
+
+                &:hover {
+                    color: rgb(108, 207, 199);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        padding-left: 30px;
+        margin-top: 200px;
+        bottom: 10px;
+        left: 10px;
+        color: white;
+        height: 30px;
+        font-family: $font-principal;
+        font-size: 12px;
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        .contenido {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .footer-section {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        height: auto;
+        min-height: 390px;
+        background-position: center;
+
+        .contenido {
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            .footer-section {
+                margin-bottom: 30px;
+
+                h4 {
+                    background-color: rgb(37, 36, 36);
+                    font-size: 18px;
+                }
+
+                img {
+                    width: 24px;
+                    height: auto;
+                }
+            }
+
+            .footer-links {
+                justify-content: center;
+
+                a {
+                    background-color: rgb(30, 29, 29);
+                    margin-bottom: 8px;
+                    font-size: 17px;
+
+                    &:hover {
+                        color: rgb(108, 207, 199);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .footer-copyright {
+            margin-top: 40px;
+            font-size: 10px;
+            align-items: flex-start;
+        }
+    }
+}

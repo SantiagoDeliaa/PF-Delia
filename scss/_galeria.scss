@@ -1,0 +1,119 @@
+
+
+.grid-padre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    padding: 10px;
+    grid-gap: 10px;
+
+    .grid-hijo {
+        position: relative;
+
+        .img-fluid {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:nth-child(1) {
+            grid-row-start: span 2;
+        }
+
+        &:nth-child(3) {
+            grid-row-start: span 2;
+        }
+
+        &:nth-child(6) {
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+        }
+
+        &:nth-child(5) {
+            grid-row-start: span 2;
+        }
+
+        .grid-hijo4 {
+            display: flex;
+            font-family: $font-principal;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(255, 255, 255, 0), rgb(111, 106, 106));
+
+            .title {
+                font-size: 39px;
+            }
+
+            .text {
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 200px;
+
+        .grid-hijo:nth-child(1) {
+            grid-row-start: span 1;
+        }
+
+        .grid-hijo:nth-child(2) {
+            grid-row-start: span 2;
+        }
+
+        .grid-hijo:nth-child(3) {
+            grid-row-start: span 1;
+        }
+
+        .grid-hijo:nth-child(5) {
+            grid-column-start: span 1;
+            grid-row-start: span 2;
+        }
+
+        .grid-hijo:nth-child(6) {
+            grid-column-start: span 1;
+            grid-row-start: span 1;
+        }
+
+        .grid-hijo4 {
+            padding: 10px;
+
+            .title {
+                font-size: 35px;
+            }
+
+            .text {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 150px;
+
+        .grid-hijo:nth-child(5) {
+            grid-row-start: span 3;
+        }
+
+        .grid-hijo:nth-child(2) {
+            grid-row-start: span 1;
+        }
+
+        .grid-hijo4 {
+            padding: 5px;
+
+            .title {
+                font-size: 25px;
+            }
+
+            .text {
+                font-size: 14px;
+            }
+        }
+    }
+}
